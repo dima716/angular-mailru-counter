@@ -1,0 +1,14 @@
+{
+    "name": "angular-mailru-counter",
+    "version": "1.0.0",
+    "peerDependencies": {
+        "@angular/core": ">=9.0.0"
+    },
+    "description": "An Angular library to simplify the use of a Mail.ru counter.",
+    "keywords": ["angular", "mail.ru", "counter"],
+    "license": "Apache-2.0",
+    "authors": [],
+    "repository": "https://github.com/dima716/angular-mailru-counter",
+    "bugs": "",
+    "homepage": "https://github.com/dima716/angular-mailru-counter"
+}
