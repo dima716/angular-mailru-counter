@@ -1,5 +1,6 @@
 import {CommonModule, isPlatformBrowser} from '@angular/common';
 import {Inject, ModuleWithProviders, NgModule, PLATFORM_ID} from '@angular/core';
+import {AngularMailRuCounterConfig} from './angular-mail-ru-counter-config';
 import {AngularMailRuCounterConfiguration} from './angular-mail-ru-counter.models';
 import {AngularMailRuCounterService} from './angular-mail-ru-counter.service';
 
@@ -43,7 +44,7 @@ export class AngularMailRuCounterModule {
             ngModule: AngularMailRuCounterModule,
             providers: [
                 AngularMailRuCounterService,
-                {provide: 'config', useValue: config},
+                {provide: AngularMailRuCounterConfig, useValue: config},
             ],
         };
     }
