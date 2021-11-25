@@ -6,7 +6,7 @@ import {
     Renderer2,
     RendererFactory2,
 } from '@angular/core';
-import {AngularMailRuCounterConfiguration} from './angular-mail-ru-counter.models';
+import {AngularMailRuCounterConfig} from './angular-mail-ru-counter-config';
 
 declare const _tmr: any;
 
@@ -18,10 +18,10 @@ export class AngularMailRuCounterService {
     private doc: Document;
 
     constructor(
-        @Inject('config') private config: AngularMailRuCounterConfiguration,
         @Inject(DOCUMENT) private documentRef: any,
         @Inject(PLATFORM_ID) private platformId: Object,
         private rendererFactory: RendererFactory2,
+        private config: AngularMailRuCounterConfig,
     ) {
         this.doc = this.documentRef as Document;
         this.renderer = this.rendererFactory.createRenderer(null, null);

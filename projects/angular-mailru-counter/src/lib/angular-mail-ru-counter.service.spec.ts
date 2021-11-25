@@ -1,5 +1,5 @@
 import {TestBed} from '@angular/core/testing';
-
+import {AngularMailRuCounterConfig} from './angular-mail-ru-counter-config';
 import {AngularMailRuCounterService} from './angular-mail-ru-counter.service';
 
 describe('AngularMailRuCounterService', () => {
@@ -7,7 +7,7 @@ describe('AngularMailRuCounterService', () => {
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            providers: [{provide: 'config', useValue: {}}],
+            providers: [{provide: AngularMailRuCounterConfig, useValue: {}}],
         });
         service = TestBed.inject(AngularMailRuCounterService);
     });
